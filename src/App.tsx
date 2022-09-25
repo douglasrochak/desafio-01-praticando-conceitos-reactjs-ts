@@ -1,6 +1,6 @@
 import { Header } from './components/Header';
 import { NewTaskInput } from './components/NewTaskInput';
-import { TasksBody } from './components/TasksBody';
+import { Task } from './components/Task'
 
 import './global.css';
 import styles from './App.module.css';
@@ -12,7 +12,15 @@ export function App() {
       <Header />
       <div className={styles.wrapper}>
         <NewTaskInput />
-        <TasksBody />
+        <main className={styles.body}>
+          <div className={styles.taskInfo}>
+            <strong>Tarefas criadas<span>5</span></strong>
+            <strong>Concluídas<span>2 de 5</span></strong>
+          </div>
+          <div className={styles.taskList}>
+            <Task />
+          </div>
+        </main>
       </div>
     </div>
   )
