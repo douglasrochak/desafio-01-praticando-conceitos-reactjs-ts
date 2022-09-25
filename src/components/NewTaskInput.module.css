@@ -1,0 +1,42 @@
+.newTask {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.newTask input {
+  border-radius: 8px;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  color: var(--gray-100);
+  line-height: 1.375;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.newTask input::placeholder {
+  color: var(--gray-300);
+}
+
+.newTask button {
+  background: var(--blue-dark);
+  border: 0;
+  border-radius: 8px;
+  color: var(--gray-100);
+  padding: 1rem;
+  font-weight: 700;
+  transition: background .2s;
+  
+  display: flex;
+  align-items: center;
+}
+
+.newTask button:hover {
+  background: var(--blue);
+  cursor: pointer;
+}
+
+.newTask button svg {
+  margin-left: .5rem;
+}
