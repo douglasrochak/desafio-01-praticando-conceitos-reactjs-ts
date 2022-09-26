@@ -1,6 +1,6 @@
 .task {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: flex-start;
   gap: .75rem;
 
@@ -45,6 +45,7 @@
 }
 
 .task p {
+  flex-grow: 1;
   font-size: .875rem;
   line-height: 1.25;
 }

@@ -1,0 +1,26 @@
+.taskInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.taskInfo strong {
+  font-size: .875rem;
+}
+.taskInfo strong:first-child {
+  color: var(--blue);
+}
+
+.taskInfo strong:last-child {
+  color: var(--purple);
+}
+
+.taskInfo strong > span {
+  background: var(--gray-400);
+  border-radius: 10px;
+  color: var(--gray-200);
+  padding: .125rem .5rem;
+  font-size: .75rem;
+  line-height: 1;
+  margin-left: .5rem;
+}

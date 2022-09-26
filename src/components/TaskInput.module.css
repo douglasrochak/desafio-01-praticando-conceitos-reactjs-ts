@@ -1,10 +1,10 @@
-.newTask {
+.taskInput {
   display: flex;
   align-items: center;
   gap: .5rem;
 }
 
-.newTask input {
+.taskInput input {
   border-radius: 8px;
   background: var(--gray-500);
   border: 1px solid var(--gray-700);
@@ -15,11 +15,11 @@
   width: 100%;
 }
 
-.newTask input::placeholder {
+.taskInput input::placeholder {
   color: var(--gray-300);
 }
 
-.newTask button {
+.taskInput button {
   background: var(--blue-dark);
   border: 0;
   border-radius: 8px;
@@ -32,11 +32,11 @@
   align-items: center;
 }
 
-.newTask button:hover {
+.taskInput button:hover {
   background: var(--blue);
   cursor: pointer;
 }
 
-.newTask button svg {
+.taskInput button svg {
   margin-left: .5rem;
 }
