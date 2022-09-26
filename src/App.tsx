@@ -52,7 +52,7 @@ export function App() {
         task.isComplete = !task.isComplete
       return task
     });
-    setTasks(newTasksList);
+    setTasks([...newTasksList]);
   }
 
   const tasksCount = tasks.length;

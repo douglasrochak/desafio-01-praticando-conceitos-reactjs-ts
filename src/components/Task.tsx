@@ -12,11 +12,9 @@ interface TaskProps {
 }
 
 export function Task({id, content, isComplete, onDelete, onChangeTaskState}: TaskProps) {
-  const [checkbox, setCheckbox] = useState(isComplete);
 
   function handleCheck(event: ChangeEvent<HTMLInputElement>){
     onChangeTaskState(id);
-    setCheckbox(!checkbox);
   } 
 
   function handleDeleteTask(){
@@ -25,7 +23,7 @@ export function Task({id, content, isComplete, onDelete, onChangeTaskState}: Tas
 
   return (
     <div className={styles.task}>
-      <input onChange={handleCheck} checked={checkbox} type="checkbox" />
+      <input onChange={handleCheck} checked={isComplete} type="checkbox" />
       <p>
         {content}
       </p>
